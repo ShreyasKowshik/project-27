@@ -5,7 +5,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Render = Matter.Render;
 const Constraint = Matter.Constraint;
-var bobObject1,bobObject2,bobObject3, bobObject4,bobObject5, roofObject
+var bob1,bob2,bob3, bob4,bob5, roofObject
 var rope1,rope2,rope3, rope4,rope5;
 var world;
 
@@ -54,9 +54,9 @@ function draw() {
   bob4.display();
   bob5.display();
 
-  function keypressed(){
+  function keyPressed(){
 	if(keycode === UP_ARROW){
-	 Matter.Body.appplyForce(bobObject1.body,bobObject1.body,position,{x:-50,y:-45});
+	 Matter.Body.applyForce(bob1.body,bob1.body,position,{x:-50,y:-45});
   }
 }
 }
